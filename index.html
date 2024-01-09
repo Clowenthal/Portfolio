@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>Chris Lowenthal</title>
+</head>
+<body>
+    <!-- body design -->
+    <div class="container">
+        <img class="top-img" src="image/IMG_0522.jpg">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </div> 
+    <header class="header">
+        <a href="#" class="logo"><strong>P</strong>ortfolio.</a>
+    </header>  
+        
+        <section id="home">
+            <p>Welcome to my home page<br/>Where you'll find out more about, my skills, experience and contact information.
+            </br>More to be updated as I learn more in my Bootcamp class</p>
+        </section>
+        
+        <section id="about">
+            <h1 class="read-me">About Me</h1>
+            <p>Hello! I'm Christopher Lowenthal. Born and raised in California. Worked in the construction field for the past 10 years</br>
+             as a welder/Labor worker. I find it very intriguing in learning how the web language/layouts/coding works</br> being able to utilize the skills i've leaned towards building effective front end and back-end websites</br> I'm A begginer in the Web Design Industry. Currently a student enrolled in UCLA Bootcamp.</br>
+            I want to pursue my career in the Web Development Industry. 
+            </br></p>
+        </section>
+        
+        <section id="portfolio">
+            <p>My Portfolio Section</p>
+            <main>
+            <div class="card">
+                <div class="card-header-1">
+                    <i class="fa-fa-line-chart" style="font-size:48px;color:red"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, culpa in ipsam soluta totam consectetur dolor doloremque</h2>
+                </div>
+                <div class="card-footer">
+                    <a href="https://uclavirtfsfpt-rnt1127.slack.com/team/U06A293FF33" class="read-more" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-2">
+                    <i class="fa fa-git" style="font-size:48px;color:greenyellow"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, culpa in ipsam soluta totam consectetur dolor doloremque</h2>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/Clowenthal" class="read-more" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-3">
+                    <i class="material-icons" style="font-size:48px;color:blueviolet">face</i>
+                </div>
+                <div class="card-content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, culpa in ipsam soluta totam consectetur dolor doloremque</h2>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header-4">
+                    <i class="material-icons" style="font-size:48px;color:lightskyblue">recent_actors</i>
+                </div>
+                <div class="card-content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, culpa in ipsam soluta totam consectetur dolor doloremque</h2>
+                </div>
+                <div class="card-footer">
+                    <a href="http//linkdin.com/in/chrs-lowenthal-259085289" class="read-more" target="_blank">Read More</a>
+                </div>
+            </div>
+        </main>
+        </section>
+        
+        <section id="contact">
+            <p>Get In touch with me</p>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            <footer>
+                &copy; Lowenthal <i class="material-icons" style="font-size:30px;color:rgb(247, 247, 247)">hot_tub</i> All rights reserved
+            </footer>
+        </section>
+        
+        
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>
+        
+</body>
+</html>
